@@ -1,0 +1,33 @@
+body {
+    background: url("https://bookstr.com/wp-content/uploads/2018/09/got-houses.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    
+}
+
+
+.jumbotron {
+    font-family: 'Germania One', cursive;
+    height: 170px;
+    margin: 25px;
+    width: auto 100%;
+    background-size: cover;
+    color: goldenrod;
+    background-image: url("https://metro.co.uk/wp-content/uploads/2017/08/3051694-game-of-thrones-characters_091710.jpg?quality=90&strip=all");
+    
+    
+    
+       
+}
+
+#buttons {
+    margin: 70px;
+}
+
+
+
+.char-btn {
+    background-color: maroon;
+    color: goldenrod;
+}
