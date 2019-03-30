@@ -21,13 +21,10 @@ body {
        
 }
 
-#buttons {
-    margin: 70px;
-}
-
-
-
-.char-btn {
+.got-btn {
+    margin-top: 70px;
     background-color: maroon;
     color: goldenrod;
 }
+
+

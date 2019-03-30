@@ -1,31 +1,35 @@
-
 var topics = ['Tyrion', 'Jamie', 'Jon', 'Daenerys', 'Bronn'];
+var results;
+var giphyURL =   "https://api.giphy.com/v1/gifs/trending?api_key=FUcIop5EQgVXBjGJ6DfE0VZD6K21JNhh";
 
-function displayGif(gifName) {
+function makeButtons() {
+    $("#got-buttons").empty();
 
-    var topics = $(this).attr("data-name");
-    var queryUrl = "https:api.giphy.com/v1/gifs/search?FUcIop5EQgVXBjGJ6DfE0VZD6K21JNhh";
+    for(i = 0; i <topics.length; i++) {
+        var b = $("<button>");
 
-    $.ajax({
-        url: queryUrl,
-        method: "GET"
-})      
+        b.addClass("got-btn");
+        b.attr("data-name", topics[i]);
+        b.text:(topics[i]);
 
-    .done(function(response) {
+        $("#got-buttons").append(b);
 
-    console.log(queryUrl);
-    console.log(response);
+    };
+};
 
-    var topicsDiv = $("<div class='topics'>");
-    var results = respone.data;
+$("#add-chars").on("click", function(event) {
+    event.preventDefault();
 
-    $('gif-view').empty();
-    for (var i=0; i < topics.length; i++) {
-        
-    }
+    var character = $("#got-input").val().trim();
+
+    topics.push(character);
+    $("#got-input").val("");
+
+    makeButtons();
+
+    console.log(topics);
+
+});
 
 
 
-
-}
-}
